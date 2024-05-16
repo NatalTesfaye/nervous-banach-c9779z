@@ -1,0 +1,98 @@
+.news{
+  margin: 4rem 6rem;
+}
+
+.news h1{
+font-size: 3rem;
+}
+
+.first-new{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+.first-new-reverse{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+.new-text{
+  width: 48%;
+  text-align: start;
+  font-size: 1.1rem;
+}
+
+.new-text h2{
+  padding-bottom: 1rem;
+}
+
+.date{
+  font-weight: 600;
+}
+
+.images{
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -99;
+}
+
+.images img{
+  width: 49%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: -1px 1px 62px -18px rgba(0, 0, 0, 0.19);
+}
+
+.images img:nth-child(2){
+  position: absolute;
+  top: -10%;
+  right: 0;
+}
+
+@media screen and (max-width: 850px){
+  .news{
+    margin: 4rem 2rem;
+  }
+  .first-new{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 2.5rem;
+  }  
+
+  .first-new-reverse{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4.5rem;
+  }
+  
+  .new-text{
+    width: 90%;
+    text-align: start;
+    font-size: 1.1rem;
+  } 
+
+  .new-text h2{
+    width: 100%;
+  }
+
+  .images{
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+.images img{
+  height: 250px;
+}
+
+.newscard {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
